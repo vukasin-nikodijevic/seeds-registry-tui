@@ -498,25 +498,36 @@ func (s *SeedsView) submitForm() {
 		colStart := 0
 		colEnd := 0
 		if s.formType == "matrix" && len(s.formInputs) > 1 {
-			var err1, err2, err3 error
+			var err1 error
 			row, err1 = strconv.Atoi(strings.TrimSpace(s.formInputs[1].Value()))
+			if err1 != nil {
+				s.message = "Invalid row number"
+				s.messageType = "error"
+				return
+			}
 			rowEndStr := strings.TrimSpace(s.formInputs[2].Value())
 			if rowEndStr != "" {
+				var err2 error
 				rowEnd, err2 = strconv.Atoi(rowEndStr)
+				if err2 != nil {
+					s.message = "Invalid row end number"
+					s.messageType = "error"
+					return
+				}
+				// Multi-row: full columns
+				colStart = 1
+				colEnd = rowEnd // placeholder, will be resolved from lot
+			} else {
+				var err3 error
+				colStart, err3 = strconv.Atoi(strings.TrimSpace(s.formInputs[3].Value()))
+				colEndVal, err4 := strconv.Atoi(strings.TrimSpace(s.formInputs[4].Value()))
+				if err3 != nil || err4 != nil {
+					s.message = "Invalid column numbers"
+					s.messageType = "error"
+					return
+				}
+				colEnd = colEndVal
 			}
-			colStart, err3 = strconv.Atoi(strings.TrimSpace(s.formInputs[3].Value()))
-			colEndVal, err4 := strconv.Atoi(strings.TrimSpace(s.formInputs[4].Value()))
-			if err1 != nil || err3 != nil || err4 != nil {
-				s.message = "Invalid row/column numbers"
-				s.messageType = "error"
-				return
-			}
-			if err2 != nil && rowEndStr != "" {
-				s.message = "Invalid row end number"
-				s.messageType = "error"
-				return
-			}
-			colEnd = colEndVal
 		}
 		if err := s.store.UpdateSeed(s.editID, plant, desc, row, rowEnd, colStart, colEnd); err != nil {
 			s.message = err.Error()
@@ -565,11 +576,9 @@ func (s *SeedsView) submitForm() {
 		if rowEndStr != "" {
 			rowEnd, err2 = strconv.Atoi(rowEndStr)
 		}
-		colStart, err3 := strconv.Atoi(strings.TrimSpace(s.formInputs[3].Value()))
-		colEnd, err4 := strconv.Atoi(strings.TrimSpace(s.formInputs[4].Value()))
 
-		if err1 != nil || err3 != nil || err4 != nil {
-			s.message = "Invalid row/column numbers"
+		if err1 != nil {
+			s.message = "Invalid row number"
 			s.messageType = "error"
 			return
 		}
@@ -578,6 +587,23 @@ func (s *SeedsView) submitForm() {
 			s.messageType = "error"
 			return
 		}
+
+		var colStart, colEnd int
+		if rowEnd > 0 {
+			// Multi-row: full columns, col inputs ignored
+			colStart = 1
+			colEnd = lot.Columns
+		} else {
+			var err3, err4 error
+			colStart, err3 = strconv.Atoi(strings.TrimSpace(s.formInputs[3].Value()))
+			colEnd, err4 = strconv.Atoi(strings.TrimSpace(s.formInputs[4].Value()))
+			if err3 != nil || err4 != nil {
+				s.message = "Invalid column numbers"
+				s.messageType = "error"
+				return
+			}
+		}
+
 		if row < 1 || row > lot.Rows {
 			s.message = fmt.Sprintf("Row must be 1-%d", lot.Rows)
 			s.messageType = "error"
@@ -589,9 +615,6 @@ func (s *SeedsView) submitForm() {
 				s.messageType = "error"
 				return
 			}
-			// Multi-row: full columns, ignore col inputs
-			colStart = 1
-			colEnd = lot.Columns
 		} else {
 			if colStart < 1 || colEnd < colStart || colEnd > lot.Columns {
 				s.message = fmt.Sprintf("Columns must be 1-%d and start ≤ end", lot.Columns)
