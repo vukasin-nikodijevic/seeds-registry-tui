@@ -449,6 +449,44 @@ func (s *Store) AddSingleSeed(plant, desc string) error {
 	return s.save()
 }
 
+// AddSingleSeedRange creates single seeds for each index in [start, end].
+func (s *Store) AddSingleSeedRange(plant, desc string, start, end int) (int, error) {
+	s.mu.Lock()
+	defer s.mu.Unlock()
+	if start < 1 || end < start {
+		return 0, fmt.Errorf("invalid range: start must be ≥ 1 and end ≥ start")
+	}
+	// Check for duplicates
+	existing := make(map[string]bool)
+	for _, seed := range s.Seeds {
+		if seed.Type == "single" {
+			existing[seed.ID] = true
+		}
+	}
+	count := 0
+	for i := start; i <= end; i++ {
+		id := fmt.Sprintf("s_%03d", i)
+		if existing[id] {
+			continue
+		}
+		seed := SeedItem{
+			ID:          id,
+			Type:        "single",
+			Plant:       plant,
+			Description: desc,
+		}
+		s.Seeds = append(s.Seeds, seed)
+		count++
+		if i >= s.NextSingle {
+			s.NextSingle = i + 1
+		}
+	}
+	if count == 0 {
+		return 0, fmt.Errorf("all indices in range already exist")
+	}
+	return count, s.save()
+}
+
 func (s *Store) RemoveSeed(id string) error {
 	s.mu.Lock()
 	defer s.mu.Unlock()

@@ -198,7 +198,19 @@ func (s *SeedsView) initForm() {
 	s.initPlantPicker("")
 	s.initLotPicker("")
 
-	if s.formType == "matrix" {
+	if s.formType == "single" {
+		numStart := textinput.New()
+		numStart.Placeholder = "Number (auto if blank)"
+		numStart.CharLimit = 5
+		numStart.Width = 20
+
+		numEnd := textinput.New()
+		numEnd.Placeholder = "Number end (optional, for range)"
+		numEnd.CharLimit = 5
+		numEnd.Width = 30
+
+		s.formInputs = append(s.formInputs, numStart, numEnd)
+	} else if s.formType == "matrix" {
 		row := textinput.New()
 		row.Placeholder = "Row start"
 		row.CharLimit = 5
@@ -540,12 +552,50 @@ func (s *SeedsView) submitForm() {
 	}
 
 	if s.formType == "single" {
-		if err := s.store.AddSingleSeed(plant, desc); err != nil {
-			s.message = err.Error()
-			s.messageType = "error"
+		numStartStr := ""
+		numEndStr := ""
+		if len(s.formInputs) > 1 {
+			numStartStr = strings.TrimSpace(s.formInputs[1].Value())
+			numEndStr = strings.TrimSpace(s.formInputs[2].Value())
+		}
+		if numStartStr == "" && numEndStr == "" {
+			// Auto-assign
+			if err := s.store.AddSingleSeed(plant, desc); err != nil {
+				s.message = err.Error()
+				s.messageType = "error"
+			} else {
+				s.message = "Single seed added"
+				s.messageType = "success"
+			}
 		} else {
-			s.message = "Single seed added"
-			s.messageType = "success"
+			start, err1 := strconv.Atoi(numStartStr)
+			if err1 != nil || start < 1 {
+				s.message = "Invalid number — enter a positive integer"
+				s.messageType = "error"
+				return
+			}
+			end := start
+			if numEndStr != "" {
+				var err2 error
+				end, err2 = strconv.Atoi(numEndStr)
+				if err2 != nil || end < start {
+					s.message = fmt.Sprintf("Invalid number end — must be ≥ %d", start)
+					s.messageType = "error"
+					return
+				}
+			}
+			count, err := s.store.AddSingleSeedRange(plant, desc, start, end)
+			if err != nil {
+				s.message = err.Error()
+				s.messageType = "error"
+			} else {
+				if start == end {
+					s.message = fmt.Sprintf("Single seed s_%03d added", start)
+				} else {
+					s.message = fmt.Sprintf("%d single seeds added (s_%03d to s_%03d)", count, start, end)
+				}
+				s.messageType = "success"
+			}
 		}
 	} else {
 		if s.lotSelected == "" {
@@ -834,6 +884,18 @@ func (s SeedsView) renderForm() string {
 	b.WriteString("  Description: ")
 	b.WriteString(s.formInputs[0].View())
 	b.WriteString("\n")
+
+	// Single-specific fields
+	if s.formType == "single" && s.mode == seedModeAdd && len(s.formInputs) > 1 {
+		b.WriteString("  Number:      ")
+		b.WriteString(s.formInputs[1].View())
+		b.WriteString(MutedStyle.Render("  (blank = auto)"))
+		b.WriteString("\n")
+		b.WriteString("  Number End:  ")
+		b.WriteString(s.formInputs[2].View())
+		b.WriteString(MutedStyle.Render("  (for batch range)"))
+		b.WriteString("\n")
+	}
 
 	// Matrix-specific fields
 	if s.formType == "matrix" && len(s.formInputs) > 1 {
