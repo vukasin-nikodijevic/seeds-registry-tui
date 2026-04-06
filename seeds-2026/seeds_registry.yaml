@@ -1,0 +1,395 @@
+plants:
+    - name: Paprika Habanero RED
+    - name: Paprika Slatka Corno Di Toro Chocholate
+    - name: Paprika Jalapeno
+    - name: Paprika Snack Orange
+    - name: Paradajz Cherry Orange Okrugli
+    - name: Paradajz Cherry Orange Duguljast
+    - name: Paradajz Mix Volovsko Srce Jabucar
+    - name: Krastavac
+    - name: Paprika Ljuta Cayenne Orange
+    - name: Paprika Ljuta Cayenne Purple
+    - name: Paprika Slatka Jupiter
+    - name: Paprika Ljuta Chilli Cayenne Long Slim
+matrix_sizes:
+    - name: 4x4cm
+      rows: 10
+      columns: 7
+lots:
+    - name: lot_001
+      matrix_size: 4x4cm
+      rows: 10
+      columns: 7
+    - name: lot_002
+      matrix_size: 4x4cm
+      rows: 10
+      columns: 7
+    - name: lot_003
+      matrix_size: 4x4cm
+      rows: 10
+      columns: 7
+    - name: lot_004
+      matrix_size: 4x4cm
+      rows: 10
+      columns: 7
+seeds:
+    - id: Lot_001-R9/7-7
+      type: matrix
+      plant: Paprika Habanero RED
+      description: ""
+      lot_name: lot_001
+      row: 9
+      col_start: 7
+      col_end: 7
+    - id: Lot_001-R10/1-7
+      type: matrix
+      plant: Paprika Habanero RED
+      description: ""
+      lot_name: lot_001
+      row: 10
+      col_start: 1
+      col_end: 7
+    - id: Lot_001-R1/1-7
+      type: matrix
+      plant: Paprika Ljuta Cayenne Orange
+      description: ""
+      lot_name: lot_001
+      row: 1
+      col_start: 1
+      col_end: 7
+    - id: Lot_001-R2/4-6
+      type: matrix
+      plant: Paprika Ljuta Cayenne Orange
+      description: ""
+      lot_name: lot_001
+      row: 2
+      col_start: 4
+      col_end: 6
+    - id: Lot_001-R2/1-3
+      type: matrix
+      plant: Paprika Ljuta Cayenne Purple
+      description: ""
+      lot_name: lot_001
+      row: 2
+      col_start: 1
+      col_end: 3
+    - id: Lot_001-R3/1-7
+      type: matrix
+      plant: Paprika Ljuta Cayenne Purple
+      description: ""
+      lot_name: lot_001
+      row: 3
+      col_start: 1
+      col_end: 7
+    - id: Lot_001-R4/6-7
+      type: matrix
+      plant: Paprika Ljuta Cayenne Purple
+      description: ""
+      lot_name: lot_001
+      row: 4
+      col_start: 6
+      col_end: 7
+    - id: Lot_001-R4/1-5
+      type: matrix
+      plant: Paprika Slatka Jupiter
+      description: ""
+      lot_name: lot_001
+      row: 4
+      col_start: 1
+      col_end: 5
+    - id: Lot_001-R5/1-7
+      type: matrix
+      plant: Paprika Slatka Jupiter
+      description: ""
+      lot_name: lot_001
+      row: 5
+      col_start: 1
+      col_end: 7
+    - id: Lot_001-R6-8
+      type: matrix
+      plant: Paprika Ljuta Chilli Cayenne Long Slim
+      description: ""
+      lot_name: lot_001
+      row: 6
+      row_end: 8
+      col_start: 1
+      col_end: 7
+    - id: Lot_001-R9/1-6
+      type: matrix
+      plant: Paprika Ljuta Chilli Cayenne Long Slim
+      description: ""
+      lot_name: lot_001
+      row: 9
+      col_start: 1
+      col_end: 6
+    - id: Lot_002-R1-8
+      type: matrix
+      plant: Paprika Habanero RED
+      description: ""
+      lot_name: lot_002
+      row: 1
+      row_end: 8
+      col_start: 1
+      col_end: 7
+    - id: Lot_002-R9/4-7
+      type: matrix
+      plant: Paprika Habanero RED
+      description: ""
+      lot_name: lot_002
+      row: 9
+      col_start: 4
+      col_end: 7
+    - id: Lot_002-R9/1-3
+      type: matrix
+      plant: Paprika Slatka Corno Di Toro Chocholate
+      description: ""
+      lot_name: lot_002
+      row: 9
+      col_start: 1
+      col_end: 3
+    - id: Lot_002-R10/1-7
+      type: matrix
+      plant: Paprika Slatka Corno Di Toro Chocholate
+      description: ""
+      lot_name: lot_002
+      row: 10
+      row_end: 10
+      col_start: 1
+      col_end: 7
+    - id: Lot_003-R1/1-7
+      type: matrix
+      plant: Paprika Slatka Corno Di Toro Chocholate
+      description: ""
+      lot_name: lot_003
+      row: 1
+      row_end: 1
+      col_start: 1
+      col_end: 7
+    - id: Lot_003-R2-10
+      type: matrix
+      plant: Paprika Jalapeno
+      description: ""
+      lot_name: lot_003
+      row: 2
+      row_end: 10
+      col_start: 1
+      col_end: 7
+    - id: Lot_004-R1/1-7
+      type: matrix
+      plant: Paprika Jalapeno
+      description: ""
+      lot_name: lot_004
+      row: 1
+      row_end: 1
+      col_start: 1
+      col_end: 7
+    - id: Lot_004-R2-10
+      type: matrix
+      plant: Paprika Snack Orange
+      description: ""
+      lot_name: lot_004
+      row: 2
+      row_end: 10
+      col_start: 1
+      col_end: 7
+    - id: s_001
+      type: single
+      plant: Paradajz Cherry Orange Okrugli
+      description: ""
+    - id: s_002
+      type: single
+      plant: Paradajz Cherry Orange Okrugli
+      description: ""
+    - id: s_003
+      type: single
+      plant: Paradajz Cherry Orange Okrugli
+      description: ""
+    - id: s_004
+      type: single
+      plant: Paradajz Cherry Orange Okrugli
+      description: ""
+    - id: s_005
+      type: single
+      plant: Paradajz Cherry Orange Okrugli
+      description: ""
+    - id: s_006
+      type: single
+      plant: Paradajz Cherry Orange Okrugli
+      description: ""
+    - id: s_007
+      type: single
+      plant: Paradajz Cherry Orange Okrugli
+      description: ""
+    - id: s_008
+      type: single
+      plant: Paradajz Cherry Orange Okrugli
+      description: ""
+    - id: s_009
+      type: single
+      plant: Paradajz Cherry Orange Okrugli
+      description: ""
+    - id: s_010
+      type: single
+      plant: Paradajz Cherry Orange Okrugli
+      description: ""
+    - id: s_011
+      type: single
+      plant: Paradajz Cherry Orange Duguljast
+      description: ""
+    - id: s_012
+      type: single
+      plant: Paradajz Cherry Orange Duguljast
+      description: ""
+    - id: s_013
+      type: single
+      plant: Paradajz Cherry Orange Duguljast
+      description: ""
+    - id: s_014
+      type: single
+      plant: Paradajz Cherry Orange Duguljast
+      description: ""
+    - id: s_015
+      type: single
+      plant: Paradajz Cherry Orange Duguljast
+      description: ""
+    - id: s_016
+      type: single
+      plant: Paradajz Cherry Orange Duguljast
+      description: ""
+    - id: s_017
+      type: single
+      plant: Paradajz Cherry Orange Duguljast
+      description: ""
+    - id: s_018
+      type: single
+      plant: Paradajz Cherry Orange Duguljast
+      description: ""
+    - id: s_019
+      type: single
+      plant: Paradajz Cherry Orange Duguljast
+      description: ""
+    - id: s_020
+      type: single
+      plant: Paradajz Cherry Orange Duguljast
+      description: ""
+    - id: s_021
+      type: single
+      plant: Paradajz Mix Volovsko Srce Jabucar
+      description: ""
+    - id: s_022
+      type: single
+      plant: Paradajz Mix Volovsko Srce Jabucar
+      description: ""
+    - id: s_023
+      type: single
+      plant: Paradajz Mix Volovsko Srce Jabucar
+      description: ""
+    - id: s_024
+      type: single
+      plant: Paradajz Mix Volovsko Srce Jabucar
+      description: ""
+    - id: s_025
+      type: single
+      plant: Paradajz Mix Volovsko Srce Jabucar
+      description: ""
+    - id: s_026
+      type: single
+      plant: Paradajz Mix Volovsko Srce Jabucar
+      description: ""
+    - id: s_027
+      type: single
+      plant: Paradajz Mix Volovsko Srce Jabucar
+      description: ""
+    - id: s_028
+      type: single
+      plant: Paradajz Mix Volovsko Srce Jabucar
+      description: ""
+    - id: s_029
+      type: single
+      plant: Paradajz Mix Volovsko Srce Jabucar
+      description: ""
+    - id: s_030
+      type: single
+      plant: Paradajz Mix Volovsko Srce Jabucar
+      description: ""
+    - id: s_031
+      type: single
+      plant: Paradajz Mix Volovsko Srce Jabucar
+      description: ""
+    - id: s_032
+      type: single
+      plant: Paradajz Mix Volovsko Srce Jabucar
+      description: ""
+    - id: s_033
+      type: single
+      plant: Paradajz Mix Volovsko Srce Jabucar
+      description: ""
+    - id: s_034
+      type: single
+      plant: Paradajz Mix Volovsko Srce Jabucar
+      description: ""
+    - id: s_035
+      type: single
+      plant: Paradajz Mix Volovsko Srce Jabucar
+      description: ""
+    - id: s_036
+      type: single
+      plant: Paradajz Mix Volovsko Srce Jabucar
+      description: ""
+    - id: s_037
+      type: single
+      plant: Paradajz Mix Volovsko Srce Jabucar
+      description: ""
+    - id: s_038
+      type: single
+      plant: Paradajz Mix Volovsko Srce Jabucar
+      description: ""
+    - id: s_039
+      type: single
+      plant: Paradajz Mix Volovsko Srce Jabucar
+      description: ""
+    - id: s_040
+      type: single
+      plant: Paradajz Mix Volovsko Srce Jabucar
+      description: ""
+    - id: s_041
+      type: single
+      plant: Krastavac
+      description: ""
+    - id: s_042
+      type: single
+      plant: Krastavac
+      description: ""
+    - id: s_043
+      type: single
+      plant: Krastavac
+      description: ""
+    - id: s_044
+      type: single
+      plant: Krastavac
+      description: ""
+    - id: s_045
+      type: single
+      plant: Krastavac
+      description: ""
+    - id: s_046
+      type: single
+      plant: Krastavac
+      description: ""
+    - id: s_047
+      type: single
+      plant: Krastavac
+      description: ""
+    - id: s_048
+      type: single
+      plant: Krastavac
+      description: ""
+    - id: s_049
+      type: single
+      plant: Krastavac
+      description: ""
+    - id: s_050
+      type: single
+      plant: Krastavac
+      description: ""
+next_single: 51
