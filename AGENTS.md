@@ -66,3 +66,6 @@ Yaml file should be saved into ~/.seeds-registry-tui in home folder of the user.
 - Search is case-insensitive across plant, description, index
 - All IDs auto-increment
 - Exports go to ~/.seeds-registry-tui/ as timestamped .txt
+- UI uses 90% of terminal width; matrix view uses 90% width and height
+- Seeds list is paginated to fit terminal height (PgUp/PgDn/Home/End supported)
+- Terminal dimensions are forwarded to all subviews via SetHeight/SetSize on WindowSizeMsg

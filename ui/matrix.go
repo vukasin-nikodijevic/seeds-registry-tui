@@ -42,6 +42,12 @@ func (m MatrixView) IsSearching() bool {
 	return m.searching
 }
 
+// SetSize updates the terminal dimensions for the matrix view.
+func (m *MatrixView) SetSize(w, h int) {
+	m.width = w
+	m.height = h
+}
+
 func (m MatrixView) Update(msg tea.Msg) (MatrixView, tea.Cmd) {
 	switch msg := msg.(type) {
 	case tea.WindowSizeMsg:
@@ -252,9 +258,22 @@ func (m MatrixView) renderGrid(lot models.Lot) string {
 		}
 	}
 
-	// Scrolling
-	maxVisibleCols := 6
-	maxVisibleRows := 12
+	// Scrolling — compute visible area from terminal size
+	// Use 90% of width/height; left panel is ~32 chars, cell width is 12, overhead ~10 lines
+	availWidth := m.width * 90 / 100
+	availHeight := m.height * 90 / 100
+	leftPanelWidth := 34 // border + padding + content
+	gridWidth := availWidth - leftPanelWidth
+	cellWidth := 12
+	maxVisibleCols := gridWidth / cellWidth
+	if maxVisibleCols < 2 {
+		maxVisibleCols = 2
+	}
+	gridOverhead := 10 // title, header, search, help, stats, separators
+	maxVisibleRows := availHeight - gridOverhead
+	if maxVisibleRows < 4 {
+		maxVisibleRows = 4
+	}
 	startCol := m.scrollX
 	startRow := m.scrollY
 	if startCol >= lot.Columns {

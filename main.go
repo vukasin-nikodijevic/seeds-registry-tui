@@ -53,7 +53,8 @@ func (m model) Update(msg tea.Msg) (tea.Model, tea.Cmd) {
 	case tea.WindowSizeMsg:
 		m.width = msg.Width
 		m.height = msg.Height
-		return m, nil
+		m.seeds.SetHeight(msg.Height)
+		m.matrix.SetSize(msg.Width, msg.Height)
 	case tea.KeyMsg:
 		if msg.String() == "ctrl+c" || (msg.String() == "q" && m.page == pageMenu) {
 			m.quitting = true
@@ -174,7 +175,7 @@ func (m model) View() string {
 		content = m.matrix.View()
 	}
 
-	minWidth := m.width * 70 / 100
+	minWidth := m.width * 90 / 100
 	frame := lipgloss.NewStyle().
 		Padding(1, 2).
 		Width(minWidth).

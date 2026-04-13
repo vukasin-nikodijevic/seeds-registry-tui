@@ -50,6 +50,9 @@ type SeedsView struct {
 	lotPicking   bool
 	lotSelected  string // lot name
 
+	height    int
+	scrollOff int // first visible row in the list
+
 	message     string
 	messageType string
 }
@@ -71,7 +74,15 @@ func (s SeedsView) Init() tea.Cmd {
 	return nil
 }
 
+// SetHeight updates the terminal height for pagination.
+func (s *SeedsView) SetHeight(h int) {
+	s.height = h
+}
+
 func (s SeedsView) Update(msg tea.Msg) (SeedsView, tea.Cmd) {
+	if wsm, ok := msg.(tea.WindowSizeMsg); ok {
+		s.height = wsm.Height
+	}
 	switch s.mode {
 	case seedModeAdd, seedModeEdit:
 		return s.updateForm(msg)
@@ -110,6 +121,27 @@ func (s SeedsView) updateList(msg tea.Msg) (SeedsView, tea.Cmd) {
 		case "down", "j":
 			if s.cursor < len(s.results)-1 {
 				s.cursor++
+			}
+		case "pgup":
+			pageSize := s.pageSize()
+			s.cursor -= pageSize
+			if s.cursor < 0 {
+				s.cursor = 0
+			}
+		case "pgdown":
+			pageSize := s.pageSize()
+			s.cursor += pageSize
+			if s.cursor >= len(s.results) {
+				s.cursor = len(s.results) - 1
+			}
+			if s.cursor < 0 {
+				s.cursor = 0
+			}
+		case "home":
+			s.cursor = 0
+		case "end":
+			if len(s.results) > 0 {
+				s.cursor = len(s.results) - 1
 			}
 		case "/":
 			s.searching = true
@@ -157,8 +189,10 @@ func (s SeedsView) updateList(msg tea.Msg) (SeedsView, tea.Cmd) {
 			s.searchInput.SetValue("")
 			s.results = s.store.GetAllSeeds()
 			s.cursor = 0
+			s.scrollOff = 0
 		}
 	}
+	s.adjustScroll()
 	return s, nil
 }
 
@@ -715,7 +749,7 @@ func (s SeedsView) View() string {
 	} else if s.searching {
 		b.WriteString(HelpStyle.Render("type to search • enter: apply • esc: cancel"))
 	} else {
-		b.WriteString(HelpStyle.Render("↑/↓: navigate • /: search • c: clear search • a: add • e: edit • d: delete • esc: back"))
+		b.WriteString(HelpStyle.Render("↑/↓/PgUp/PgDn/Home/End: navigate • /: search • c: clear • a: add • e: edit • d: delete • esc: back"))
 	}
 
 	return b.String()
@@ -750,7 +784,21 @@ func (s SeedsView) renderListView() string {
 	b.WriteString(MutedStyle.Render(strings.Repeat("─", 78)))
 	b.WriteString("\n")
 
-	for i, seed := range s.results {
+	// Paginate: compute visible window
+	pageSize := s.pageSize()
+	if pageSize <= 0 {
+		pageSize = len(s.results)
+	}
+
+	offset := s.scrollOff
+
+	end := offset + pageSize
+	if end > len(s.results) {
+		end = len(s.results)
+	}
+
+	for i := offset; i < end; i++ {
+		seed := s.results[i]
 		line := fmt.Sprintf("%-20s %-10s %-15s %-30s", seed.Index(), seed.Type, seed.Plant, seed.Description)
 		if i == s.cursor {
 			b.WriteString(SelectedStyle.Render("▸ " + line))
@@ -759,6 +807,15 @@ func (s SeedsView) renderListView() string {
 		}
 		b.WriteString("\n")
 	}
+
+	// Page indicator
+	if len(s.results) > pageSize {
+		page := offset/pageSize + 1
+		totalPages := (len(s.results) + pageSize - 1) / pageSize
+		b.WriteString(MutedStyle.Render(fmt.Sprintf("  Page %d/%d  (%d items)  — PgUp/PgDn, Home/End", page, totalPages, len(s.results))))
+		b.WriteString("\n")
+	}
+
 	return b.String()
 }
 
@@ -923,6 +980,30 @@ func (s SeedsView) renderForm() string {
 	}
 
 	return b.String()
+}
+
+// adjustScroll keeps scrollOff in sync with cursor position.
+func (s *SeedsView) adjustScroll() {
+	ps := s.pageSize()
+	if s.cursor < s.scrollOff {
+		s.scrollOff = s.cursor
+	}
+	if s.cursor >= s.scrollOff+ps {
+		s.scrollOff = s.cursor - ps + 1
+	}
+	if s.scrollOff < 0 {
+		s.scrollOff = 0
+	}
+}
+
+// pageSize returns how many seed rows fit on screen.
+// Reserves lines for: title(2) + search(2) + header+sep(2) + page indicator(1) + message(2) + help(2) + frame padding(2) = ~13 overhead.
+func (s SeedsView) pageSize() int {
+	overhead := 13
+	if s.height <= overhead {
+		return 10 // fallback
+	}
+	return s.height - overhead
 }
 
 func (s *SeedsView) RefreshResults() {

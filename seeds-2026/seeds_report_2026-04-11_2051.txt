@@ -1,0 +1,343 @@
+╔══════════════════════════════════════════════════════════════╗
+║                    SEEDS REGISTRY REPORT                    ║
+╚══════════════════════════════════════════════════════════════╝
+  Generated: 2026-04-11 20:51
+
+┌──────────────────────────────────────────────────────────────┐
+│  SUMMARY                                                    │
+├──────────────────────────────────────────────────────────────┤
+│  Plant types:   32                                         │
+│  Matrix sizes:  2                                          │
+│  Matrix lots:   8                                          │
+│  Total seeds:   125                                        │
+└──────────────────────────────────────────────────────────────┘
+
+── PLANT TYPES ──────────────────────────────────────────────
+
+  1. Paprika Habanero RED
+  2. Paprika Slatka Corno Di Toro Chocholate
+  3. Paprika Jalapeno
+  4. Paprika Snack Orange
+  5. Paradajz Cherry Orange Okrugli
+  6. Paradajz Cherry Orange Duguljast
+  7. Paradajz Mix Volovsko Srce Jabucar
+  8. Krastavac
+  9. Paprika Ljuta Cayenne Orange
+  10. Paprika Ljuta Cayenne Purple
+  11. Paprika Slatka Jupiter
+  12. Paprika Ljuta Chilli Cayenne Long Slim
+  13. Kupus Srpski Melez 4
+  14. Kupus Ditmar
+  15. Blitva
+  16. Boranija Zuta
+  17. Boranija Zelena
+  18. Grasak Kelvedon
+  19. Suncokret Ukrasni
+  20. Luk Vlasac
+  21. Dinja Ananas
+  22. Celer Praski
+  23. Salata Puterica
+  24. Rukola
+  25. Cvekla
+  26. Lavanda
+  27. Neven
+  28. Ruzmarin
+  29. Mirodjija
+  30. Nana
+  31. Maticnjak
+  32. Bosiljak Ljubicasti
+
+── SINGLE SEEDS ─────────────────────────────────────────────
+
+  Index         Plant                 Description
+  ────────────  ────────────────────  ──────────────────────────
+  s_001         Paradajz Cherry Orange Okrugli  
+  s_002         Paradajz Cherry Orange Okrugli  
+  s_003         Paradajz Cherry Orange Okrugli  
+  s_004         Paradajz Cherry Orange Okrugli  
+  s_005         Paradajz Cherry Orange Okrugli  
+  s_006         Paradajz Cherry Orange Okrugli  
+  s_007         Paradajz Cherry Orange Okrugli  
+  s_008         Paradajz Cherry Orange Okrugli  
+  s_009         Paradajz Cherry Orange Okrugli  
+  s_010         Paradajz Cherry Orange Okrugli  
+  s_011         Paradajz Cherry Orange Duguljast  
+  s_012         Paradajz Cherry Orange Duguljast  
+  s_013         Paradajz Cherry Orange Duguljast  
+  s_014         Paradajz Cherry Orange Duguljast  
+  s_015         Paradajz Cherry Orange Duguljast  
+  s_016         Paradajz Cherry Orange Duguljast  
+  s_017         Paradajz Cherry Orange Duguljast  
+  s_018         Paradajz Cherry Orange Duguljast  
+  s_019         Paradajz Cherry Orange Duguljast  
+  s_020         Paradajz Cherry Orange Duguljast  
+  s_021         Paradajz Mix Volovsko Srce Jabucar  
+  s_022         Paradajz Mix Volovsko Srce Jabucar  
+  s_023         Paradajz Mix Volovsko Srce Jabucar  
+  s_024         Paradajz Mix Volovsko Srce Jabucar  
+  s_025         Paradajz Mix Volovsko Srce Jabucar  
+  s_026         Paradajz Mix Volovsko Srce Jabucar  
+  s_027         Paradajz Mix Volovsko Srce Jabucar  
+  s_028         Paradajz Mix Volovsko Srce Jabucar  
+  s_029         Paradajz Mix Volovsko Srce Jabucar  
+  s_030         Paradajz Mix Volovsko Srce Jabucar  
+  s_031         Paradajz Mix Volovsko Srce Jabucar  
+  s_032         Paradajz Mix Volovsko Srce Jabucar  
+  s_033         Paradajz Mix Volovsko Srce Jabucar  
+  s_034         Paradajz Mix Volovsko Srce Jabucar  
+  s_035         Paradajz Mix Volovsko Srce Jabucar  
+  s_036         Paradajz Mix Volovsko Srce Jabucar  
+  s_037         Paradajz Mix Volovsko Srce Jabucar  
+  s_038         Paradajz Mix Volovsko Srce Jabucar  
+  s_039         Paradajz Mix Volovsko Srce Jabucar  
+  s_040         Paradajz Mix Volovsko Srce Jabucar  
+  s_041         Krastavac             
+  s_042         Krastavac             
+  s_043         Krastavac             
+  s_044         Krastavac             
+  s_045         Krastavac             
+  s_046         Krastavac             
+  s_047         Krastavac             
+  s_048         Krastavac             
+  s_049         Krastavac             
+  s_050         Krastavac             
+  s_051         Lavanda               
+  s_052         Lavanda               
+  s_053         Lavanda               
+  s_054         Lavanda               
+  s_055         Lavanda               
+  s_056         Neven                 
+  s_057         Neven                 
+  s_058         Neven                 
+  s_059         Neven                 
+  s_060         Neven                 
+  s_061         Neven                 
+  s_062         Neven                 
+  s_063         Neven                 
+  s_064         Neven                 
+  s_065         Neven                 
+  s_066         Ruzmarin              
+  s_067         Ruzmarin              
+  s_068         Ruzmarin              
+  s_069         Ruzmarin              
+  s_070         Ruzmarin              
+  s_071         Mirodjija             
+  s_072         Mirodjija             
+  s_073         Mirodjija             
+  s_074         Mirodjija             
+  s_075         Mirodjija             
+  s_076         Nana                  
+  s_077         Nana                  
+  s_078         Nana                  
+  s_079         Nana                  
+  s_080         Nana                  
+  s_081         Maticnjak             
+  s_082         Maticnjak             
+  s_083         Maticnjak             
+  s_084         Maticnjak             
+  s_085         Maticnjak             
+  s_086         Bosiljak Ljubicasti   
+  s_087         Bosiljak Ljubicasti   
+  s_088         Bosiljak Ljubicasti   
+  s_089         Bosiljak Ljubicasti   
+  s_090         Bosiljak Ljubicasti   
+
+── MATRIX LOTS ──────────────────────────────────────────────
+
+  LOT_001  (10 rows × 7 columns)  —  69/70 planted (99%)
+
+              Col 1       Col 2       Col 3       Col 4       Col 5       Col 6       Col 7       
+  ────────────────────────────────────────────────────────────────────────────────────────────────
+  Row 1       Paprika Lj  Paprika Lj  Paprika Lj  Paprika Lj  Paprika Lj  Paprika Lj  Paprika Lj  
+  Row 2       Paprika Lj  Paprika Lj  Paprika Lj  Paprika Lj  Paprika Lj  Paprika Lj  ·           
+  Row 3       Paprika Lj  Paprika Lj  Paprika Lj  Paprika Lj  Paprika Lj  Paprika Lj  Paprika Lj  
+  Row 4       Paprika Sl  Paprika Sl  Paprika Sl  Paprika Sl  Paprika Sl  Paprika Lj  Paprika Lj  
+  Row 5       Paprika Sl  Paprika Sl  Paprika Sl  Paprika Sl  Paprika Sl  Paprika Sl  Paprika Sl  
+  Row 6       Paprika Lj  Paprika Lj  Paprika Lj  Paprika Lj  Paprika Lj  Paprika Lj  Paprika Lj  
+  Row 7       Paprika Lj  Paprika Lj  Paprika Lj  Paprika Lj  Paprika Lj  Paprika Lj  Paprika Lj  
+  Row 8       Paprika Lj  Paprika Lj  Paprika Lj  Paprika Lj  Paprika Lj  Paprika Lj  Paprika Lj  
+  Row 9       Paprika Lj  Paprika Lj  Paprika Lj  Paprika Lj  Paprika Lj  Paprika Lj  Paprika Ha  
+  Row 10      Paprika Ha  Paprika Ha  Paprika Ha  Paprika Ha  Paprika Ha  Paprika Ha  Paprika Ha  
+
+  Planted seeds:
+    Index                   Plant            Description
+    ──────────────────────  ───────────────  ──────────────────────
+    Lot_001-R9/7            Paprika Habanero RED  
+    Lot_001-R10/1-7         Paprika Habanero RED  
+    Lot_001-R1/1-7          Paprika Ljuta Cayenne Orange  
+    Lot_001-R2/4-6          Paprika Ljuta Cayenne Orange  
+    Lot_001-R2/1-3          Paprika Ljuta Cayenne Purple  
+    Lot_001-R3/1-7          Paprika Ljuta Cayenne Purple  
+    Lot_001-R4/6-7          Paprika Ljuta Cayenne Purple  
+    Lot_001-R4/1-5          Paprika Slatka Jupiter  
+    Lot_001-R5/1-7          Paprika Slatka Jupiter  
+    Lot_001-R6-8            Paprika Ljuta Chilli Cayenne Long Slim  
+    Lot_001-R9/1-6          Paprika Ljuta Chilli Cayenne Long Slim  
+
+
+  LOT_002  (10 rows × 7 columns)  —  70/70 planted (100%)
+
+              Col 1       Col 2       Col 3       Col 4       Col 5       Col 6       Col 7       
+  ────────────────────────────────────────────────────────────────────────────────────────────────
+  Row 1       Paprika Ha  Paprika Ha  Paprika Ha  Paprika Ha  Paprika Ha  Paprika Ha  Paprika Ha  
+  Row 2       Paprika Ha  Paprika Ha  Paprika Ha  Paprika Ha  Paprika Ha  Paprika Ha  Paprika Ha  
+  Row 3       Paprika Ha  Paprika Ha  Paprika Ha  Paprika Ha  Paprika Ha  Paprika Ha  Paprika Ha  
+  Row 4       Paprika Ha  Paprika Ha  Paprika Ha  Paprika Ha  Paprika Ha  Paprika Ha  Paprika Ha  
+  Row 5       Paprika Ha  Paprika Ha  Paprika Ha  Paprika Ha  Paprika Ha  Paprika Ha  Paprika Ha  
+  Row 6       Paprika Ha  Paprika Ha  Paprika Ha  Paprika Ha  Paprika Ha  Paprika Ha  Paprika Ha  
+  Row 7       Paprika Ha  Paprika Ha  Paprika Ha  Paprika Ha  Paprika Ha  Paprika Ha  Paprika Ha  
+  Row 8       Paprika Ha  Paprika Ha  Paprika Ha  Paprika Ha  Paprika Ha  Paprika Ha  Paprika Ha  
+  Row 9       Paprika Sl  Paprika Sl  Paprika Sl  Paprika Ha  Paprika Ha  Paprika Ha  Paprika Ha  
+  Row 10      Paprika Sl  Paprika Sl  Paprika Sl  Paprika Sl  Paprika Sl  Paprika Sl  Paprika Sl  
+
+  Planted seeds:
+    Index                   Plant            Description
+    ──────────────────────  ───────────────  ──────────────────────
+    Lot_002-R1-8            Paprika Habanero RED  
+    Lot_002-R9/4-7          Paprika Habanero RED  
+    Lot_002-R9/1-3          Paprika Slatka Corno Di Toro Chocholate  
+    Lot_002-R10/1-7         Paprika Slatka Corno Di Toro Chocholate  
+
+
+  LOT_003  (10 rows × 7 columns)  —  70/70 planted (100%)
+
+              Col 1       Col 2       Col 3       Col 4       Col 5       Col 6       Col 7       
+  ────────────────────────────────────────────────────────────────────────────────────────────────
+  Row 1       Paprika Sl  Paprika Sl  Paprika Sl  Paprika Sl  Paprika Sl  Paprika Sl  Paprika Sl  
+  Row 2       Paprika Ja  Paprika Ja  Paprika Ja  Paprika Ja  Paprika Ja  Paprika Ja  Paprika Ja  
+  Row 3       Paprika Ja  Paprika Ja  Paprika Ja  Paprika Ja  Paprika Ja  Paprika Ja  Paprika Ja  
+  Row 4       Paprika Ja  Paprika Ja  Paprika Ja  Paprika Ja  Paprika Ja  Paprika Ja  Paprika Ja  
+  Row 5       Paprika Ja  Paprika Ja  Paprika Ja  Paprika Ja  Paprika Ja  Paprika Ja  Paprika Ja  
+  Row 6       Paprika Ja  Paprika Ja  Paprika Ja  Paprika Ja  Paprika Ja  Paprika Ja  Paprika Ja  
+  Row 7       Paprika Ja  Paprika Ja  Paprika Ja  Paprika Ja  Paprika Ja  Paprika Ja  Paprika Ja  
+  Row 8       Paprika Ja  Paprika Ja  Paprika Ja  Paprika Ja  Paprika Ja  Paprika Ja  Paprika Ja  
+  Row 9       Paprika Ja  Paprika Ja  Paprika Ja  Paprika Ja  Paprika Ja  Paprika Ja  Paprika Ja  
+  Row 10      Paprika Ja  Paprika Ja  Paprika Ja  Paprika Ja  Paprika Ja  Paprika Ja  Paprika Ja  
+
+  Planted seeds:
+    Index                   Plant            Description
+    ──────────────────────  ───────────────  ──────────────────────
+    Lot_003-R1/1-7          Paprika Slatka Corno Di Toro Chocholate  
+    Lot_003-R2-10           Paprika Jalapeno  
+
+
+  LOT_004  (10 rows × 7 columns)  —  70/70 planted (100%)
+
+              Col 1       Col 2       Col 3       Col 4       Col 5       Col 6       Col 7       
+  ────────────────────────────────────────────────────────────────────────────────────────────────
+  Row 1       Paprika Ja  Paprika Ja  Paprika Ja  Paprika Ja  Paprika Ja  Paprika Ja  Paprika Ja  
+  Row 2       Paprika Sn  Paprika Sn  Paprika Sn  Paprika Sn  Paprika Sn  Paprika Sn  Paprika Sn  
+  Row 3       Paprika Sn  Paprika Sn  Paprika Sn  Paprika Sn  Paprika Sn  Paprika Sn  Paprika Sn  
+  Row 4       Paprika Sn  Paprika Sn  Paprika Sn  Paprika Sn  Paprika Sn  Paprika Sn  Paprika Sn  
+  Row 5       Paprika Sn  Paprika Sn  Paprika Sn  Paprika Sn  Paprika Sn  Paprika Sn  Paprika Sn  
+  Row 6       Paprika Sn  Paprika Sn  Paprika Sn  Paprika Sn  Paprika Sn  Paprika Sn  Paprika Sn  
+  Row 7       Paprika Sn  Paprika Sn  Paprika Sn  Paprika Sn  Paprika Sn  Paprika Sn  Paprika Sn  
+  Row 8       Paprika Sn  Paprika Sn  Paprika Sn  Paprika Sn  Paprika Sn  Paprika Sn  Paprika Sn  
+  Row 9       Paprika Sn  Paprika Sn  Paprika Sn  Paprika Sn  Paprika Sn  Paprika Sn  Paprika Sn  
+  Row 10      Paprika Sn  Paprika Sn  Paprika Sn  Paprika Sn  Paprika Sn  Paprika Sn  Paprika Sn  
+
+  Planted seeds:
+    Index                   Plant            Description
+    ──────────────────────  ───────────────  ──────────────────────
+    Lot_004-R1/1-7          Paprika Jalapeno  
+    Lot_004-R2-10           Paprika Snack Orange  
+
+
+  LOT_005  (10 rows × 6 columns)  —  60/60 planted (100%)
+
+              Col 1       Col 2       Col 3       Col 4       Col 5       Col 6       
+  ────────────────────────────────────────────────────────────────────────────────────
+  Row 1       Kupus Ditm  Kupus Ditm  Kupus Ditm  Kupus Ditm  Kupus Ditm  Kupus Ditm  
+  Row 2       Kupus Ditm  Kupus Ditm  Kupus Ditm  Kupus Ditm  Kupus Ditm  Kupus Ditm  
+  Row 3       Kupus Ditm  Kupus Ditm  Kupus Ditm  Kupus Ditm  Kupus Ditm  Kupus Ditm  
+  Row 4       Kupus Ditm  Kupus Ditm  Kupus Ditm  Kupus Ditm  Kupus Ditm  Kupus Ditm  
+  Row 5       Kupus Ditm  Kupus Ditm  Kupus Ditm  Kupus Ditm  Kupus Ditm  Kupus Ditm  
+  Row 6       Kupus Srps  Kupus Srps  Kupus Srps  Kupus Srps  Kupus Srps  Kupus Srps  
+  Row 7       Kupus Srps  Kupus Srps  Kupus Srps  Kupus Srps  Kupus Srps  Kupus Srps  
+  Row 8       Kupus Srps  Kupus Srps  Kupus Srps  Kupus Srps  Kupus Srps  Kupus Srps  
+  Row 9       Kupus Srps  Kupus Srps  Kupus Srps  Kupus Srps  Kupus Srps  Kupus Srps  
+  Row 10      Kupus Srps  Kupus Srps  Kupus Srps  Kupus Srps  Kupus Srps  Kupus Srps  
+
+  Planted seeds:
+    Index                   Plant            Description
+    ──────────────────────  ───────────────  ──────────────────────
+    Lot_005-R6-10           Kupus Srpski Melez 4  
+    Lot_005-R1-5            Kupus Ditmar     
+
+
+  LOT_006  (10 rows × 6 columns)  —  60/60 planted (100%)
+
+              Col 1       Col 2       Col 3       Col 4       Col 5       Col 6       
+  ────────────────────────────────────────────────────────────────────────────────────
+  Row 1       Blitva      Blitva      Blitva      Blitva      Blitva      Blitva      
+  Row 2       Blitva      Blitva      Blitva      Blitva      Blitva      Blitva      
+  Row 3       Boranija Z  Boranija Z  Boranija Z  Boranija Z  Boranija Z  Boranija Z  
+  Row 4       Boranija Z  Boranija Z  Boranija Z  Boranija Z  Boranija Z  Boranija Z  
+  Row 5       Boranija Z  Boranija Z  Boranija Z  Boranija Z  Boranija Z  Boranija Z  
+  Row 6       Boranija Z  Boranija Z  Boranija Z  Boranija Z  Boranija Z  Boranija Z  
+  Row 7       Boranija Z  Boranija Z  Boranija Z  Boranija Z  Boranija Z  Boranija Z  
+  Row 8       Boranija Z  Boranija Z  Boranija Z  Boranija Z  Boranija Z  Boranija Z  
+  Row 9       Grasak Kel  Grasak Kel  Grasak Kel  Grasak Kel  Grasak Kel  Grasak Kel  
+  Row 10      Grasak Kel  Grasak Kel  Grasak Kel  Grasak Kel  Grasak Kel  Grasak Kel  
+
+  Planted seeds:
+    Index                   Plant            Description
+    ──────────────────────  ───────────────  ──────────────────────
+    Lot_006-R1-2            Blitva           
+    Lot_006-R3-5            Boranija Zuta    
+    Lot_006-R6-8            Boranija Zelena  
+    Lot_006-R9-10           Grasak Kelvedon  
+
+
+  LOT_007  (10 rows × 6 columns)  —  60/60 planted (100%)
+
+              Col 1       Col 2       Col 3       Col 4       Col 5       Col 6       
+  ────────────────────────────────────────────────────────────────────────────────────
+  Row 1       Grasak Kel  Grasak Kel  Grasak Kel  Grasak Kel  Grasak Kel  Grasak Kel  
+  Row 2       Grasak Kel  Grasak Kel  Grasak Kel  Grasak Kel  Grasak Kel  Grasak Kel  
+  Row 3       Suncokret   Suncokret   Suncokret   Suncokret   Suncokret   Suncokret   
+  Row 4       Suncokret   Suncokret   Suncokret   Suncokret   Suncokret   Suncokret   
+  Row 5       Suncokret   Suncokret   Suncokret   Suncokret   Suncokret   Luk Vlasac  
+  Row 6       Luk Vlasac  Luk Vlasac  Luk Vlasac  Luk Vlasac  Luk Vlasac  Luk Vlasac  
+  Row 7       Luk Vlasac  Luk Vlasac  Luk Vlasac  Luk Vlasac  Luk Vlasac  Luk Vlasac  
+  Row 8       Luk Vlasac  Luk Vlasac  Luk Vlasac  Luk Vlasac  Luk Vlasac  Luk Vlasac  
+  Row 9       Luk Vlasac  Luk Vlasac  Luk Vlasac  Luk Vlasac  Luk Vlasac  Luk Vlasac  
+  Row 10      Dinja Anan  Dinja Anan  Dinja Anan  Dinja Anan  Dinja Anan  Dinja Anan  
+
+  Planted seeds:
+    Index                   Plant            Description
+    ──────────────────────  ───────────────  ──────────────────────
+    Lot_007-R1-2            Grasak Kelvedon  
+    Lot_007-R3-4            Suncokret Ukrasni  
+    Lot_007-R5/1-5          Suncokret Ukrasni  
+    Lot_007-R5/6            Luk Vlasac       
+    Lot_007-R6-9            Luk Vlasac       
+    Lot_007-R10/1-6         Dinja Ananas     
+
+
+  LOT_008  (10 rows × 6 columns)  —  60/60 planted (100%)
+
+              Col 1       Col 2       Col 3       Col 4       Col 5       Col 6       
+  ────────────────────────────────────────────────────────────────────────────────────
+  Row 1       Celer Pras  Celer Pras  Celer Pras  Celer Pras  Celer Pras  Celer Pras  
+  Row 2       Celer Pras  Celer Pras  Celer Pras  Celer Pras  Celer Pras  Celer Pras  
+  Row 3       Celer Pras  Celer Pras  Celer Pras  Celer Pras  Celer Pras  Celer Pras  
+  Row 4       Salata Put  Salata Put  Salata Put  Salata Put  Salata Put  Salata Put  
+  Row 5       Salata Put  Salata Put  Salata Put  Salata Put  Salata Put  Salata Put  
+  Row 6       Salata Put  Salata Put  Salata Put  Salata Put  Salata Put  Salata Put  
+  Row 7       Rukola      Rukola      Rukola      Rukola      Rukola      Rukola      
+  Row 8       Rukola      Rukola      Rukola      Rukola      Rukola      Rukola      
+  Row 9       Cvekla      Cvekla      Cvekla      Cvekla      Cvekla      Cvekla      
+  Row 10      Cvekla      Cvekla      Cvekla      Cvekla      Cvekla      Cvekla      
+
+  Planted seeds:
+    Index                   Plant            Description
+    ──────────────────────  ───────────────  ──────────────────────
+    Lot_008-R1-3            Celer Praski     
+    Lot_008-R4-6            Salata Puterica  
+    Lot_008-R7-8            Rukola           
+    Lot_008-R9-10           Cvekla           
+
+
+══════════════════════════════════════════════════════════════
+  End of report

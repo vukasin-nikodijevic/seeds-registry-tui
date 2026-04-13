@@ -11,10 +11,33 @@ plants:
     - name: Paprika Ljuta Cayenne Purple
     - name: Paprika Slatka Jupiter
     - name: Paprika Ljuta Chilli Cayenne Long Slim
+    - name: Kupus Srpski Melez 4
+    - name: Kupus Ditmar
+    - name: Blitva
+    - name: Boranija Zuta
+    - name: Boranija Zelena
+    - name: Grasak Kelvedon
+    - name: Suncokret Ukrasni
+    - name: Luk Vlasac
+    - name: Dinja Ananas
+    - name: Celer Praski
+    - name: Salata Puterica
+    - name: Rukola
+    - name: Cvekla
+    - name: Lavanda
+    - name: Neven
+    - name: Ruzmarin
+    - name: Mirodjija
+    - name: Nana
+    - name: Maticnjak
+    - name: Bosiljak Ljubicasti
 matrix_sizes:
     - name: 4x4cm
       rows: 10
       columns: 7
+    - name: 3.5cm krug
+      rows: 10
+      columns: 6
 lots:
     - name: lot_001
       matrix_size: 4x4cm
@@ -32,6 +55,22 @@ lots:
       matrix_size: 4x4cm
       rows: 10
       columns: 7
+    - name: lot_005
+      matrix_size: 3.5cm krug
+      rows: 10
+      columns: 6
+    - name: lot_006
+      matrix_size: 3.5cm krug
+      rows: 10
+      columns: 6
+    - name: lot_007
+      matrix_size: 3.5cm krug
+      rows: 10
+      columns: 6
+    - name: lot_008
+      matrix_size: 3.5cm krug
+      rows: 10
+      columns: 6
 seeds:
     - id: Lot_001-R9/7-7
       type: matrix
@@ -392,4 +431,306 @@ seeds:
       type: single
       plant: Krastavac
       description: ""
-next_single: 51
+    - id: Lot_005-R6-10
+      type: matrix
+      plant: Kupus Srpski Melez 4
+      description: ""
+      lot_name: lot_005
+      row: 6
+      row_end: 10
+      col_start: 1
+      col_end: 6
+    - id: Lot_005-R1-5
+      type: matrix
+      plant: Kupus Ditmar
+      description: ""
+      lot_name: lot_005
+      row: 1
+      row_end: 5
+      col_start: 1
+      col_end: 6
+    - id: Lot_006-R1-2
+      type: matrix
+      plant: Blitva
+      description: ""
+      lot_name: lot_006
+      row: 1
+      row_end: 2
+      col_start: 1
+      col_end: 6
+    - id: Lot_006-R3-5
+      type: matrix
+      plant: Boranija Zuta
+      description: ""
+      lot_name: lot_006
+      row: 3
+      row_end: 5
+      col_start: 1
+      col_end: 6
+    - id: Lot_006-R6-8
+      type: matrix
+      plant: Boranija Zelena
+      description: ""
+      lot_name: lot_006
+      row: 6
+      row_end: 8
+      col_start: 1
+      col_end: 6
+    - id: Lot_006-R9-10
+      type: matrix
+      plant: Grasak Kelvedon
+      description: ""
+      lot_name: lot_006
+      row: 9
+      row_end: 10
+      col_start: 1
+      col_end: 6
+    - id: Lot_007-R1-2
+      type: matrix
+      plant: Grasak Kelvedon
+      description: ""
+      lot_name: lot_007
+      row: 1
+      row_end: 2
+      col_start: 1
+      col_end: 6
+    - id: Lot_007-R3-4
+      type: matrix
+      plant: Suncokret Ukrasni
+      description: ""
+      lot_name: lot_007
+      row: 3
+      row_end: 4
+      col_start: 1
+      col_end: 6
+    - id: Lot_007-R5/1-5
+      type: matrix
+      plant: Suncokret Ukrasni
+      description: ""
+      lot_name: lot_007
+      row: 5
+      col_start: 1
+      col_end: 5
+    - id: Lot_007-R5/6-6
+      type: matrix
+      plant: Luk Vlasac
+      description: ""
+      lot_name: lot_007
+      row: 5
+      col_start: 6
+      col_end: 6
+    - id: Lot_007-R6-9
+      type: matrix
+      plant: Luk Vlasac
+      description: ""
+      lot_name: lot_007
+      row: 6
+      row_end: 9
+      col_start: 1
+      col_end: 6
+    - id: Lot_007-R10/1-6
+      type: matrix
+      plant: Dinja Ananas
+      description: ""
+      lot_name: lot_007
+      row: 10
+      row_end: 10
+      col_start: 1
+      col_end: 6
+    - id: Lot_008-R1-3
+      type: matrix
+      plant: Celer Praski
+      description: ""
+      lot_name: lot_008
+      row: 1
+      row_end: 3
+      col_start: 1
+      col_end: 6
+    - id: Lot_008-R4-6
+      type: matrix
+      plant: Salata Puterica
+      description: ""
+      lot_name: lot_008
+      row: 4
+      row_end: 6
+      col_start: 1
+      col_end: 6
+    - id: Lot_008-R7-8
+      type: matrix
+      plant: Rukola
+      description: ""
+      lot_name: lot_008
+      row: 7
+      row_end: 8
+      col_start: 1
+      col_end: 6
+    - id: Lot_008-R9-10
+      type: matrix
+      plant: Cvekla
+      description: ""
+      lot_name: lot_008
+      row: 9
+      row_end: 10
+      col_start: 1
+      col_end: 6
+    - id: s_051
+      type: single
+      plant: Lavanda
+      description: ""
+    - id: s_052
+      type: single
+      plant: Lavanda
+      description: ""
+    - id: s_053
+      type: single
+      plant: Lavanda
+      description: ""
+    - id: s_054
+      type: single
+      plant: Lavanda
+      description: ""
+    - id: s_055
+      type: single
+      plant: Lavanda
+      description: ""
+    - id: s_056
+      type: single
+      plant: Neven
+      description: ""
+    - id: s_057
+      type: single
+      plant: Neven
+      description: ""
+    - id: s_058
+      type: single
+      plant: Neven
+      description: ""
+    - id: s_059
+      type: single
+      plant: Neven
+      description: ""
+    - id: s_060
+      type: single
+      plant: Neven
+      description: ""
+    - id: s_061
+      type: single
+      plant: Neven
+      description: ""
+    - id: s_062
+      type: single
+      plant: Neven
+      description: ""
+    - id: s_063
+      type: single
+      plant: Neven
+      description: ""
+    - id: s_064
+      type: single
+      plant: Neven
+      description: ""
+    - id: s_065
+      type: single
+      plant: Neven
+      description: ""
+    - id: s_066
+      type: single
+      plant: Ruzmarin
+      description: ""
+    - id: s_067
+      type: single
+      plant: Ruzmarin
+      description: ""
+    - id: s_068
+      type: single
+      plant: Ruzmarin
+      description: ""
+    - id: s_069
+      type: single
+      plant: Ruzmarin
+      description: ""
+    - id: s_070
+      type: single
+      plant: Ruzmarin
+      description: ""
+    - id: s_071
+      type: single
+      plant: Mirodjija
+      description: ""
+    - id: s_072
+      type: single
+      plant: Mirodjija
+      description: ""
+    - id: s_073
+      type: single
+      plant: Mirodjija
+      description: ""
+    - id: s_074
+      type: single
+      plant: Mirodjija
+      description: ""
+    - id: s_075
+      type: single
+      plant: Mirodjija
+      description: ""
+    - id: s_076
+      type: single
+      plant: Nana
+      description: ""
+    - id: s_077
+      type: single
+      plant: Nana
+      description: ""
+    - id: s_078
+      type: single
+      plant: Nana
+      description: ""
+    - id: s_079
+      type: single
+      plant: Nana
+      description: ""
+    - id: s_080
+      type: single
+      plant: Nana
+      description: ""
+    - id: s_081
+      type: single
+      plant: Maticnjak
+      description: ""
+    - id: s_082
+      type: single
+      plant: Maticnjak
+      description: ""
+    - id: s_083
+      type: single
+      plant: Maticnjak
+      description: ""
+    - id: s_084
+      type: single
+      plant: Maticnjak
+      description: ""
+    - id: s_085
+      type: single
+      plant: Maticnjak
+      description: ""
+    - id: s_086
+      type: single
+      plant: Bosiljak Ljubicasti
+      description: ""
+    - id: s_087
+      type: single
+      plant: Bosiljak Ljubicasti
+      description: ""
+    - id: s_088
+      type: single
+      plant: Bosiljak Ljubicasti
+      description: ""
+    - id: s_089
+      type: single
+      plant: Bosiljak Ljubicasti
+      description: ""
+    - id: s_090
+      type: single
+      plant: Bosiljak Ljubicasti
+      description: ""
+next_single: 91
